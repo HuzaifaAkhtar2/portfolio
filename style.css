@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --textcolor: #FFFFFF;
+    --hovercolor: #000000;
+    --bgcolor: linear-gradient(90deg, #02AABD, #00CDAC);
+    --btn: linear-gradient(90deg, #00CDAC, #02AABD);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bgcolor);
+}
+
+.header {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: 5px 5px 15px var(--hovercolor);
+    min-height: 39px;
+}
+
+.navLink {
+    color: var(--textcolor);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 41px;
+    transition: .4s ease-in-out;
+    font-weight: 900;
+}
+
+.navLink:hover {
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+header img {
+    display: none;
+}
+
+.main {
+    min-height: calc(100vh - 69px - 68px);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: var(--textcolor);
+    text-align: center;
+}
+
+.text>h1:nth-child(2) {
+    font-family: "Dancing Script", cursive;
+
+}
+
+.footer {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: -5px -5px 15px var(--hovercolor);
+}
+
+.go-to-top {
+    color: var(--textcolor);
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    font-weight: 800;
+    display: block;
+}
+
+.go-to-top:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.copyright,
+.top {
+    width: 370px;
+}
+
+.dev {
+    margin-left: 10px;
+}
+
+.github {
+    width: 40px;
+    height: 30px;
+}
