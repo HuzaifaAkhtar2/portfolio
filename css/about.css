@@ -1,0 +1,125 @@
+:root {
+    --textcolor: #FAF9F6;
+    --hovercolor: #111010;
+    --bgcolor: linear-gradient(90deg, #02AABD, #00CDAC);
+    --btn: linear-gradient(90deg, #00CDAC, #02AABD);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bgcolor);
+}
+
+.title {
+    color: var(--textcolor);
+    margin-left: 30px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.title:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+main {
+    min-height: calc(100vh - 69px - 68px);
+}
+
+.header {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: 5px 5px 15px var(--hovercolor);
+}
+
+.navLink {
+    color: var(--textcolor);
+    text-decoration: none;
+    margin-right: 41px;
+    transition: .4s ease-in-out;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.navLink:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.header img {
+    display: none;
+}
+
+.image {
+    margin: 75px 0 115px 0;
+    float: left;
+    filter: grayscale(100%);
+}
+
+.img {
+    height: 500px;
+}
+
+
+.description {
+    color: var(--textcolor);
+    margin-top: 75px;
+}
+
+.description>p {
+    margin: 10px;
+    text-indent: 5%;
+    text-align: justify;
+    font-weight: 500;
+}
+
+
+.footer {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: 5px 5px 15px var(--hovercolor);
+}
+
+.go-to-top {
+    color: var(--textcolor);
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    font-weight: 800;
+    display: block;
+}
+
+.go-to-top:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.copyright,
+.top {
+    width: 370px;
+}

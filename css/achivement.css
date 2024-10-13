@@ -1,0 +1,135 @@
+:root {
+    --textcolor: #FAF9F6;
+    --hovercolor: #111010;
+    --bgcolor: linear-gradient(90deg, #02AABD, #00CDAC);
+    --btn: linear-gradient(90deg, #00CDAC, #02AABD);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bgcolor);
+}
+
+.title {
+    color: var(--textcolor);
+    margin-left: 30px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.title:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.header {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: 5px 5px 15px var(--hovercolor);
+}
+
+.navLink {
+    color: var(--textcolor);
+    text-decoration: none;
+    margin-right: 41px;
+    transition: .4s ease-in-out;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.main{
+    min-height: calc(100vh - 69px - 68px);
+}
+
+.certificates {
+    color: var(--textcolor);
+}
+
+.certificates>h1 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.certificates>.certificate {
+    margin: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.certificate {
+    background: var(--hovercolor);
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 10px var(--hovercolor);
+    padding: 10px;
+}
+
+.navLink:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.header img {
+    display: none;
+}
+
+.footer {
+    color: var(--textcolor);
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--btn);
+    box-shadow: -5px -5px 15px var(--hovercolor);
+}
+
+.go-to-top {
+    color: var(--textcolor);
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    font-weight: 800;
+    display: block;
+}
+
+.go-to-top:hover {
+    transition: .4s ease-in-out;
+    color: var(--hovercolor);
+    transform: translateY(-3px);
+}
+
+.copyright,
+.top {
+    width: 370px;
+}
+
+.dev {
+    margin-left: 10px;
+}
+
+.github {
+    width: 40px;
+    height: 30px;
+}
